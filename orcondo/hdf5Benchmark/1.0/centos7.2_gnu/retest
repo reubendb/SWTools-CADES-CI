@@ -69,7 +69,7 @@ cd \$PBS_O_WORKDIR
 module load PE-gnu
 
 H5BIN=${SW_BLDDIR}/bin/hdf5Benchmark
-aprun -n 12 \$H5BIN | tee ${PACKAGE}.log | tee -a ${SW_BLDDIR}/.running
+mpirun -n 12 \$H5BIN | tee ${PACKAGE}.log | tee -a ${SW_BLDDIR}/.running
 #aprun -n 12 \$H5BIN | tee -a ${SW_BLDDIR}/.running
 
 #-- Check result
