@@ -5,7 +5,7 @@
 #Uncomment this line to generate a debug executable
 #STD    =  -c -i4  -tp k8-64 -g -Mbounds -Ktrap=fp 
 #STD    =  -c -i4 -tp k8-64 -g -Mbounds 
-COMP   = $FC -g -c $(STD)
+COMP   = ${FC} -g -c $(STD)
 #Uncomment this line to generate an optimized executable
 #COMP1  = ftn -c -r8 -i4 -fastsse -Mnolre
 #COMP1  =  ftn -c -r8 -i4 -O1
