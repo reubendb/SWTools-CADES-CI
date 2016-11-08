@@ -1,0 +1,27 @@
+  ### Set Environment (do not remove this line only change what is in between)
+  . ${MODULESHOME}/init/ksh
+  module unload PE-pgi
+  module unload PE-cray
+  module unload PE-gnu
+  module unload PE-intel
+  module load PE-gnu
+  ### End Environment (do not remove this line only change what is in between)
+# load any other dependent modules here
+module load hdf5-parallel
+# env vars here
+
+PACKAGE=hdf5Benchmark
+VER=1.0
+SRCDIR=$PACKAGE-$VER
+
+# these may need to go up in the special section between ###
+export CC=pecc
+export CXX=pec++
+export MPICC=pecc
+export MPICXX=pec++
+export FC=pefortran
+export MPIFC=pefortran
+#export LIBS=" -ldl"
+#export CPPFLAGS=-DpgiFortran
+
+export PE_ADD_RPATH=1
