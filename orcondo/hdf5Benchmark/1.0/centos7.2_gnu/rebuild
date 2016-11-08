@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/bin/bash
 
 ############################## standard interface to /sw tools
 # Input:

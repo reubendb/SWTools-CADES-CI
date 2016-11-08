@@ -1,5 +1,5 @@
   ### Set Environment (do not remove this line only change what is in between)
-  . ${MODULESHOME}/init/ksh
+  . ${MODULESHOME}/init/bash
   module unload PE-pgi
   module unload PE-cray
   module unload PE-gnu
