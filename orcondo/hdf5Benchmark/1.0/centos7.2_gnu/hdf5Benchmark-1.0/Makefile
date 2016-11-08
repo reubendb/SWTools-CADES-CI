@@ -14,7 +14,7 @@ COMP   = ${FC} -g -c $(STD)
 #COMP1  = ftn -c -i4 -tp k8-64 -g -Mbounds 
 RadHyd_LIB =$(HDF) $(LAPACK)
 #RadHyd_LIB =$(HDF)
-SEGLDR = ftn -g -o hdf5Benchmark
+SEGLDR = ${FC} -g -o hdf5Benchmark
 EXE = hdf5Benchmark
 default : $(EXE)
 
