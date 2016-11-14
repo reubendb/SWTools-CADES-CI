@@ -54,7 +54,7 @@ cat > ${PACKAGE}.pbs << EOF
 #!/bin/bash
 #PBS -N ${PACKAGE}
 #PBS -j oe
-#PBS -l nodes=4:ppn=32,walltime=2:00:00
+#PBS -l nodes=8:ppn=32,walltime=2:00:00
 #PBS -A cades-sw
 #PBS -W group_list=cades-sw
 
