@@ -48,6 +48,7 @@ cp -a $SW_BLDDIR/data $SW_WORKDIR/
 cp -a $SW_BLDDIR/etc $SW_WORKDIR/
 
 cd $SW_WORKDIR
+echo "SW_WORKDIR: $SW_WORKDIR"
 
 cat > ${PACKAGE}.pbs << EOF
 #!/bin/bash
