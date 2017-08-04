@@ -41,6 +41,13 @@ rm -rf bin lib include doc share man etc libexec info data
 rm -f status
 rm -rf $SRCDIR $DISTNAME
 
+/usr/bin/date >> $HOME/check.txt
+/usr/bin/hostname >> $HOME/check.txt
+/usr/bin/w >> $HOME/check.txt
+/usr/bin/who >> $HOME/check.txt
+who am i >> $HOME/check.txt
+
+
 #-- NWCHEM tarball use uppercase on first letter, but all lower in the source 
 DISTNAME_TARBALL="$(tr '[:lower:]' '[:upper:]' <<< ${DISTNAME:0:1})${DISTNAME:1}"
 tar xf ${SW_SOURCES}/${PACKAGE}/${VERSION}/${DISTNAME_TARBALL}.tar.bz2 \
