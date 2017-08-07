@@ -42,6 +42,10 @@ fi
 #clear out status file since re-testing
 rm -f status 
 
+/usr/bin/date >> $HOME/check.txt
+/usr/bin/w >> $HOME/check.txt
+/usr/bin/who am i >> $HOME/check.txt
+
 cd $SW_WORKDIR
 
 #-- Four things are required in the PBS script such that it can be followed

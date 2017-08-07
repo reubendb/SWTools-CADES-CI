@@ -43,6 +43,10 @@ rm -f status
 #cd $SRCDIR added next three lines tbouvet 01/24/2012
 cd $SRCDIR
 
+/usr/bin/date >> $HOME/check.txt
+/usr/bin/w >> $HOME/check.txt
+/usr/bin/who am i >> $HOME/check.txt
+
 #make distclean
 make clean
 
